@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main-styles.css" />
+    <title>Доброе утро</title>
+  </head>
+
+  <body>
+    <script>
+      function droop() {
+        document.getElementById("dropmenu").classList.toggle("show");
+      }
+
+      window.onclick = function (event) {
+        if (!event.target.matches(".but")) {
+          var menu = document.getElementsByClassName("menu");
+          var i;
+          for (i = 0; i < menu.length; i++) {
+            var open = drop[i];
+            if (open.classList.contains("show")) {
+              open.classList.remove("show"); 
+            }
+          }
+        }
+      };
+    </script>
+    <header>
+      <div class="header">
+        <a href="kyl_peoples.html">Хорошие люди</a>
+        <a href="info.html">Информация о сервере</a>
+      </div>
+    </header>
+    <div class="main_container">
+      <main>
+        <img src="images/chmonya.jpeg" alt="chmonya" class="chmonya" />
+        <div class="main_content">
+          <h1>Даров</h1>
+          <h2>Ты на сайте сервера "Доброе утро"</h2>
+          <p class="content">
+            Короче тут будет инфа о самом сервере, гайды, и, возможно, розыгрыши
+            на роли.
+          </p>
+          <div class="dropdown">
+            <button onclick="droop()" class="but">
+              Что можно делать на сервере? &darr;
+            </button>
+            <div id="dropmenu" class="menu">
+              <ul>
+                <li><a href="peoples.html" target="_blank">Находить себе хорошего собеседника под игры</a></li>
+                <li>Читать мои гайды</li>
+                <li>Ну и всё что угодно</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer">
+        <h3>
+          Сайт создан им:
+          <a href="https://discordapp.com/users/770006527536791582/" class="me"
+            >+++</a
+          >
+        </h3>
+        <br />
+        <div class="links">
+          <img src="images/discord.png" alt="discord" class="icon" />
+          <a href="https://discord.gg/bb8F8ku3X2" target="_blank"
+            >Наш дискорд</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

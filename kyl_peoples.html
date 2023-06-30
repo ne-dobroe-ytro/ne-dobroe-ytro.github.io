@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main-styles.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Хорошие люди</title>
+</head>
+<body>
+    <script>
+        (function() {
+            var profiles = document.querySelector('profiles');
+
+            var observer = new IntersectionObserver (entries => {
+                entries.forEach (entry => {
+                    if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference ()) {
+                        return;
+                    }
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add ('profile');
+                    }
+                });
+            });
+            observer.observe (profiles);
+        })();
+    </script>
+    <header>
+        <div class="header">
+            <a href="index.html">Главная</a>
+            <a href="info.html">Информация о сервере</a>
+        </div>
+    </header>
+    <div class="main_container">
+        <main>
+            <div class="main_content">
+                <div class="profile">
+                <h2>Сервер был создан этим человеком:</h2>
+                <div class="profiles">
+                    <a href="https://discordapp.com/users/834479459196731503/" target="_blank"> <img
+                            src="images/fxchoi.webp" alt="fxchoi" title="fxchoi"> </a>
+                    <h3>fxchoi</h3>
+                    <p>Хороший человек, но с писклявым голосом.</p>
+                </div>
+                <h2>Модератор, правая рука Овнера.</h2>
+                <div class="profiles">
+                    <a href="https://discord.com/users/770006527536791582/" target="_blank"> <img src="images/+++.webp"
+                            alt="+++" title="+++"> </a>
+                    <h3>+++</h3>
+                    Спросите у него, когда обнова.
+                </div>
+
+                <h2>Хелпер, левая рука Овнера.</h2>
+                <div class="profiles">
+                    <a href="https://discord.com/users/510557516992741414/" target="_blank"> <img
+                            src="images/darkxan.gif" alt="darkxan"></a>
+                    <h3>darkxan</h3>
+                    Спросите у него, съели ли его собаки.
+                </div>
+                <h2>random guy</h2>
+                <div class="profiles">
+                    <a href="https://discord.com/users/976500845002752000/" target="_blank"> <img src="images/dava.webp"alt="dava"></a>
+                    <h3>dava</h3>
+                    Хороший актив, претендент на хелпера.
+                </div>
+            </div>
+        </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <h3>Сайт создан им: <a href="https://discordapp.com/users/770006527536791582/" class="me">+++</a>
+            </h3> <br>
+            <div class="links">
+                <img src="images/discord.png" alt="discord" class="icon">
+                <a href="https://discord.gg/bb8F8ku3X2" target="_blank">Наш дискорд</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
