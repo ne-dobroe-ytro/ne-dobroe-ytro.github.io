@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Кнопки хидера */
+.header > a {
+    text-decoration: none;
+    color: azure;
+    background: linear-gradient(45deg, #191c22 50%, #2a2b31 50%);
+    box-shadow: -20px,#1640a3;
+    padding: 10px;
+    display: inline-flex;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+/* Отступ первой строки для заголовков */
+h1, h2 {
+    text-indent: 10px;
+}
+/* Тело */
+body {
+    color: #ffffff;
+    /* background-color: #1c2029; */
+    background: linear-gradient(45deg, #1c2029 50%, #3a3b3b 40%, #1640a3 30%);
+    background-repeat: repeat;
+}
+/* Бета флекс айтемов для хидера */
+/* .header_items > a:hover {
+    background-color: aquamarine;
+    color: black;
+    transition: 1s;
+} */
+/* Хидер */
+header {
+    background: linear-gradient(45deg, #1640a3 40%,#1c2029 30%);
+    padding: 20px;
+    display: flex; 
+    flex-wrap: nowrap;
+}
+/* Мейн */
+main {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #2f3136, #1c2029);
+    width: calc(80% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    animation: plavno, plavno_2;
+    animation-duration: 1s;
+    animation-delay: 20ms;
+    flex-wrap: nowrap;
+}
+/* Мейн контент */
+.main_content {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+}
+/* Первая буква заголовка у мейн контента */
+.main_content > h1::first-letter {
+    color: #1640a3;
+    font-size: 30px;
+}
+/* Мейн контейнер */
+.main_container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+/* Текст */
+.content {
+    margin-top: 20px;
+}
+/* Чмоня */
+.chmonya {
+    margin-right: 20px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    animation: none;
+}
+/* Чмоня при наведении */
+.chmonya:hover {
+    animation: chmonya;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/* Анимация чмони */
+@keyframes chmonya {
+    from {
+        width: 100px;
+        height: 100px;
+        filter: hue-rotate(500deg);
+        
+    }
+    50% {
+        width: 150px;
+        height: 150px;
+        filter: hue-rotate(300deg);
+    } 
+    to {
+        animation: chmonya_2;
+    }
+}
+/* Вторая анимация чмони */
+@keyframes chmonya_2 {
+    from {
+        width: 150px;
+        height: 150px;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+        filter: hue-rotate(200deg);
+    }
+}
+/* Переход окон_1 */
+@keyframes plavno {
+    from {
+        background: linear-gradient(45deg, #2f3136, #1c2029);
+        opacity: 0.9;
+        margin-right: 100%;
+    }
+    40% {
+        background: linear-gradient(45deg, #333538, #1e2129);
+        opacity: 0.6;
+        margin-right: 50%;
+    }
+    50% {
+        background: linear-gradient(45deg,#37383a,#262830);
+        opacity: 0.3;
+        margin-right: 0%;
+    }
+    80% {
+        background: linear-gradient(45deg,#3a3b3b,#2a2b31);
+        opacity: 0;
+    }
+    to {
+        animation: plavno_2;
+    }
+
+}
+/* Переход окон_2 */
+@keyframes plavno_2 {
+    from {
+        background: linear-gradient(45deg,#3a3b3b,#2a2b31);
+        opacity: 0;
+        margin-right: 100%;
+    }
+    40% {
+        background: linear-gradient(45deg,#37383a,#262830);
+        opacity: 0.3;
+    }
+    50% {
+        background: linear-gradient(45deg, #333538, #1e2129);
+        opacity: 0.6;
+    }
+    to {
+        background: linear-gradient(45deg, #2f3136, #1c2029);
+        opacity: 0.9;
+        margin-right: 0%;
+    }
+}
+
+.menu > li {
+    text-decoration: none;
+    transition: 1s;
+    margin: 5px;
+}
+li:nth-child(2n + 1) {
+    color: #5271b9;
+}
+.menu > h2 {
+    margin-bottom: 20px;
+}
+.menu {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #1c2029;
+    min-width: 160px;
+    z-index: 1;
+}
+footer {
+    justify-content: center;
+    display: flex;
+    min-height: 20vh;
+    border-radius: 10px;
+    margin: 10px;
+}
+.footer {
+    background: linear-gradient(60deg, #33353d 70%, #2f3136);
+    border-radius: 10px;
+    width: calc(80% - 50px);
+    padding: 20px;
+}
+.footer > h3 {
+    font-size: 20px;
+}
+.icon {
+    width: 15px;
+    height: 15px;
+}
+.me {
+    color: #1640a3;
+    text-decoration: none;
+}
+.links > a {
+    text-decoration: none;
+    color: #1640a3;
+    letter-spacing: 1px;
+}
+
+.links > a:hover {
+    color: #5271b9;
+    transition: 1s;
+}
+.left_tree {
+    max-width: 35px;
+    position: absolute;
+    min-height: 100vh;
+}
+@media screen and (min-width: 100px) and (max-width: 720px)  {
+    body {
+        background: linear-gradient(45deg, #191c22 50%, #1640a3 60%,  ); 
+        background-repeat: no-repeat;
+        max-width: auto;
+    }
+    .chmonya {
+        display: none;
+    }
+    .content {
+        display: block;
+        margin-top: 10px;
+    }
+}
+li > a {
+    text-decoration-style: wavy;
+    color: #5271b9;
+}
+.but {
+    margin-top: 20px;
+    background-color: #2980B9;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.but:hover {
+    background-color: #1640a3;
+    transition: 0.6s;
+  }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}   
+.show {
+    display:block;
+    animation: dropmenu;
+    animation-duration: 0.4s;
+}
+@keyframes dropmenu {
+    from {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 1;
+    }
+}
