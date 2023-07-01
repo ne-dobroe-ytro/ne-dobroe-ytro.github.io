@@ -300,7 +300,7 @@ li > a {
         max-width: auto;
     }
     main {
-        max-height: 20vh;
+        max-height: 60vh;
     }
     .left_wrap {
         width: calc(100% - 0px);
