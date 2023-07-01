@@ -45,7 +45,7 @@ main {
     display: flex;
     min-height: 100vh;
     background: linear-gradient(45deg, #2f3136, #1c2029);
-    width: calc(80% - 20px);
+    width: calc(90% - 20px);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
@@ -171,7 +171,7 @@ main {
     transition: 1s;
     margin: 5px;
 }
-li:nth-child(2n + 1) {
+li:nth-child(2n + 2) {
     color: #5271b9;
 }
 .menu > h2 {
@@ -214,15 +214,35 @@ footer {
     color: #1640a3;
     letter-spacing: 1px;
 }
-
+.left_wrap {
+    display: flex; 
+    background: linear-gradient(45deg, #2f3136, #1c2029);
+    width: calc(30% - 100px);
+    margin-right: 10px;
+}
+.left_tree {
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px;
+    list-style: none;
+    cursor: pointer;
+}
+.left_tree > ul > li{
+    list-style: none;
+    max-height: 50px;
+}
+.info {
+    color: #5271b9;
+    text-decoration: none;
+}
+.info:hover {
+    transition: 0.6s;
+    color: #1640a3;
+}
 .links > a:hover {
     color: #5271b9;
     transition: 1s;
-}
-.left_tree {
-    max-width: 35px;
-    position: absolute;
-    min-height: 100vh;
 }
 @media screen and (min-width: 100px) and (max-width: 720px)  {
     body {
