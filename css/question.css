@@ -33,6 +33,7 @@ p {
         float: left;
         translate: 20px;
         overflow-y: scroll;
+        overflow-x: hidden;
         max-height: 90px;
     }
 }
