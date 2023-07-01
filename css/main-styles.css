@@ -301,8 +301,8 @@ li > a {
     }
     .left_wrap {
         width: calc(100% - 0px);
-        min-width: calc(20% - 0px);
-        max-width: calc(70% - 0px);
+        min-width: calc(35% - 0px);
+        max-width: calc(90% - 0px);
         line-break: auto;
     }
     .chmonya {
