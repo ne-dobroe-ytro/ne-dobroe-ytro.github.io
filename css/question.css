@@ -14,12 +14,14 @@ p {
     margin-top: 10px;
     font-style: italic;
     font-size: 18px;
-    background: linear-gradient(45deg, #5271b9, #1745b1);
+    color: rgb(59, 59, 61);
+    background: linear-gradient(45deg, #5271b9, #1b55dd);
     max-width: fit-content;
     padding: 10px;
     border-radius: 10px;
 }
 .questionn {
+    margin-top: 20px;
     background-color: #191c22;
     border-radius: 10px;
     padding: 10px;

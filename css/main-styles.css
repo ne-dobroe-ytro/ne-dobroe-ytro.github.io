@@ -219,9 +219,11 @@ footer {
     background: linear-gradient(45deg, #2f3136, #1c2029);
     width: calc(30% - 100px);
     margin-right: 10px;
+    border-radius: 10px;
 }
 .left_tree {
     color: #ffffff;
+    line-break: anywhere;
     font-size: 20px;
     margin-top: 15px;
     padding: 5px;
@@ -244,20 +246,7 @@ footer {
     color: #5271b9;
     transition: 1s;
 }
-@media screen and (min-width: 100px) and (max-width: 720px)  {
-    body {
-        background: linear-gradient(45deg, #191c22 50%, #1640a3 60%,  ); 
-        background-repeat: no-repeat;
-        max-width: auto;
-    }
-    .chmonya {
-        display: none;
-    }
-    .content {
-        display: block;
-        margin-top: 10px;
-    }
-}
+
 li > a {
     text-decoration-style: wavy;
     color: #5271b9;
@@ -302,5 +291,33 @@ li > a {
     }
     to {
         opacity: 1;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 720px)  {
+    body {
+        background: linear-gradient(45deg, #191c22 50%, #1640a3 60%,  ); 
+        background-repeat: no-repeat;
+        max-width: auto;
+    }
+    .left_wrap {
+        width: calc(100% - 0px);
+        min-width: calc(20% - 0px);
+        max-width: calc(70% - 0px);
+        line-break: auto;
+    }
+    .chmonya {
+        display: none;
+    }
+    .content {
+        display: block;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width : 720px) and (max-width: 1200px) {
+    .left_wrap {
+        width: calc(45% - 0px);
+        min-width: calc(20% - 0px);
+        max-width: calc(70% - 0px);
+        line-break: auto;
     }
 }
