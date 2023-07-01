@@ -319,5 +319,6 @@ li > a {
         min-width: calc(20% - 0px);
         max-width: calc(70% - 0px);
         line-break: auto;
+        border-radius: 10px;
     }
 }
