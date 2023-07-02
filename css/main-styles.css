@@ -299,9 +299,6 @@ li > a {
         background-repeat: no-repeat;
         max-width: auto;
     }
-    main {
-        max-height: 60vh;
-    }
     .left_wrap {
         width: calc(100% - 0px);
         min-width: calc(35% - 0px);

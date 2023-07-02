@@ -65,7 +65,9 @@
 }
 .buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 45px;
     align-items: end;
     max-height: 5px;
     width: 100%;
@@ -74,8 +76,8 @@
 .previous {
     text-decoration: none;
     position: relative;
-    bottom: 45px;
-    left: 45px;
+    /* bottom: 45px;
+    left: 45px; */
     background-color: #181d27;
     border-radius: 10px;
     color: white;
@@ -89,8 +91,8 @@
 .next {
     text-decoration: none;
     position: relative;
-    bottom: 45px;
-    right: 45px;
+    /* bottom: 45px;
+    right: 45px; */
     border-radius: 10px;
     background-color: #181d27;
     color: white;
