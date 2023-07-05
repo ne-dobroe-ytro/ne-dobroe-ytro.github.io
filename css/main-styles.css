@@ -318,7 +318,7 @@ li > a {
     }
     .main_container {
         justify-content: flex-end;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     main {
         min-height: 20vh;
@@ -327,11 +327,12 @@ li > a {
         margin-top: 10px;
         min-height: 20vh;
         justify-content: flex-end;
-        margin-right: 10%;
+        margin-right: 5%;
     }
     .left_wrap {
-        min-width: calc(31% - 0px);
+        min-width: calc(33% - 0px);
         max-width: calc(35% - 0px);
+        font-size: 20px;
         line-break: auto;
         left: 0%;
         min-height: 20vh;
