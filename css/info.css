@@ -8,3 +8,12 @@ h2 {
     bottom: 60px;
     text-align: end;
 }
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.cc {
+    border: 2px solid #1640a3;
+    padding: 3.5px;
+    border-radius: 2px;
+}

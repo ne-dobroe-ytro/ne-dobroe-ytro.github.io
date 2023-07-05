@@ -14,9 +14,9 @@ p {
     margin-top: 10px;
     font-style: italic;
     font-size: 18px;
-    color: rgb(59, 59, 61);
-    background: linear-gradient(45deg, #5271b9, #1b55dd);
-    max-width: fit-content;
+    color: hsl(0, 0%, 60%);
+    background-color: #1c212b;
+    max-width: 80%;
     padding: 10px;
     border-radius: 10px;
 }

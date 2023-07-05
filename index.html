@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="js/loading.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main-styles.css"/>
@@ -8,39 +9,26 @@
   </head>
 
   <body>
-    <script>
-      function droop() {
-        document.getElementById("dropmenu").classList.toggle("show");
-      }
-
-      window.onclick = function (event) {
-        if (!event.target.matches(".but")) {
-          var menu = document.getElementsByClassName("menu");
-          var i;
-          for (i = 0; i < menu.length; i++) {
-            var open = drop[i];
-            if (open.classList.contains("show")) {
-              open.classList.remove("show"); 
-            }
-          }
-        }
-      };
-    </script>
+    <script src="js/dropmenu.js"></script>
+    <script src="js/active.js"></script>
     <header>
       <div class="header">
+        <a href="index.html" id="active">Главная</a>
         <a href="kyl_peoples.html">Хорошие люди</a>
         <a href="info.html">Информация о сервере</a>
       </div>
     </header>
+    <div class="left_wrap">
+      <div class="left_tree">
+        <h3>Навигация</h3>
+        <ul>
+          <li><a href="questions.html" class="info"> &#63;|Общие вопросы </a></li>
+        </ul>
+      </div>
+    </div>
     <div class="main_container">
       <main>
-        <div class="left_wrap">
-          <div class="left_tree">
-            <ul>
-              <li><a href="questions.html" class="info"> &#63;|Общие вопросы </a></li>
-            </ul>
-          </div>
-        </div>
+        
         <img src="images/chmonya.jpeg" alt="chmonya" class="chmonya" />
         <div class="main_content">
           <h1>Даров</h1>
@@ -63,6 +51,9 @@
           </div>
         </div>
       </main>
+    </div>
+    <div class="ok">
+      
     </div>
     <footer>
       <div class="footer">

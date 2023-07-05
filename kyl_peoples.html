@@ -9,29 +9,21 @@
     <title>Хорошие люди</title>
 </head>
 <body>
-    <script>
-        (function() {
-            var profiles = document.querySelector('profiles');
-
-            var observer = new IntersectionObserver (entries => {
-                entries.forEach (entry => {
-                    if (typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference ()) {
-                        return;
-                    }
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add ('profile');
-                    }
-                });
-            });
-            observer.observe (profiles);
-        })();
-    </script>
     <header>
         <div class="header">
             <a href="index.html">Главная</a>
+            <a href="kyl_peoples.html" id="active">Хорошие люди</a>
             <a href="info.html">Информация о сервере</a>
         </div>
     </header>
+    <div class="left_wrap">
+        <div class="left_tree">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="questions.html" class="info"> &#63;|Общие вопросы </a></li>
+          </ul>
+        </div>
+      </div>
     <div class="main_container">
         <main>
             <div class="main_content">
@@ -50,7 +42,7 @@
                     <h3>+++</h3>
                     Спросите у него, когда обнова.
                 </div>
-
+                <div>
                 <h2>Хелпер, левая рука Овнера.</h2>
                 <div class="profiles">
                     <a href="https://discord.com/users/510557516992741414/" target="_blank"> <img
