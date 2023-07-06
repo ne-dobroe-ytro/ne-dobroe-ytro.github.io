@@ -17,7 +17,7 @@
 main {
     display: flex;
     justify-content: center;
-    margin-right: 15%;
+    margin-right: 0%;
     min-height: 80vh;
     background: linear-gradient(45deg, #2f3136, #1c2029);
     width: calc(70% - 20px);
@@ -57,10 +57,7 @@ main {
     border-radius: 30px;
 }
 
-@media screen and (min-width: 100px) and (max-width: 720px)  {
-        main {
-        margin-right: 0;
-        }
+@media screen and (min-width: 100px) and (max-width: 710px)  {
         .peoples {
             font-size: 18px;
             margin-top: 20px;
@@ -75,7 +72,7 @@ main {
         main {
             display: flex;
             justify-content: center;
-            margin-right: 0;
+            margin-right: 0%;
             min-height: 80vh;
             background: linear-gradient(45deg, #2f3136, #1c2029);
             width: calc(70% - 20px);
@@ -126,7 +123,7 @@ main {
     }
 }
 .buttons {
-    min-width: 85%;
+    min-width: 100%;
     padding: 10px; 
     bottom: 20%;
     display: flex;

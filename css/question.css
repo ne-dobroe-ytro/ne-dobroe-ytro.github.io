@@ -9,6 +9,7 @@
 p {
     font-size: 20px;
 }
+
 .otvet {
     translate: 100px;
     margin-top: 10px;
@@ -27,6 +28,14 @@ p {
     padding: 10px;
 }
 @media screen and (min-width: 100px) and (max-width: 1300px) {
+    .main_container {
+        margin-right: 0%;
+        justify-content: center;
+    }
+    footer {
+        margin-right: 0%;
+        justify-content: center;
+    }
     .otvet {
         max-width: calc(90% - 0px);
         font-size: 18px;
