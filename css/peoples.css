@@ -17,7 +17,7 @@
 main {
     display: flex;
     justify-content: center;
-    /* margin-right: 15%; */
+    margin-right: 15%;
     min-height: 80vh;
     background: linear-gradient(45deg, #2f3136, #1c2029);
     width: calc(70% - 20px);
