@@ -5,7 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* Кнопки хидера */
-.header > a {
+.head > a {
     text-decoration: none;
     color: azure;
     background: linear-gradient(45deg, #191c22 50%, #2a2b31 50%);
@@ -16,7 +16,7 @@
     margin-right: 20px;
     border-radius: 5px;
 }
-.header > a:hover{
+.head > a:hover{
     background: linear-gradient(45deg, #2980B9 50%, #191c22 50%);
 }
 /* Отступ первой строки для заголовков */
@@ -40,10 +40,20 @@ body {
 } */
 /* Хидер */
 header {
-    background: linear-gradient(45deg, #1640a3 40%,#1c2029 30%);
+    background: linear-gradient(45deg, #242831 40%,#191c22 30%);
     padding: 20px;
-    display: flex; 
-    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+.neim {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.09;
+}
+.header_items {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
 }
 /* Мейн */
 main {
@@ -193,21 +203,22 @@ li:nth-child(2n + 2) {
     min-width: 160px;
     z-index: 1;
 }
+.quest {
+    display: none;
+}
 footer {
-    margin-left: 2%;
     margin-top: 10px;
     justify-content: center;
     display: flex;
     min-height: 40vh;
     border-radius: 10px;
- 
+    margin-left: 2%;
 }
 .footer {
     background: linear-gradient(60deg, #33353db4 70%, #2f3136b0);
     border-radius: 10px;
     width: calc(70% - 20px);
     padding: 20px;
-
 }
 .footer > h3 {
     font-size: 20px;
@@ -270,6 +281,7 @@ li > a {
 }
 .but {
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #2980B9;
     color: white;
     padding: 16px;
@@ -316,26 +328,49 @@ li > a {
         background-repeat: no-repeat;
         max-width: auto;
     }
+    .head {
+        margin-bottom: 3px;
+    }
+    .quest {
+        display: block;
+        text-decoration: none;
+        color: #1640a3;
+        letter-spacing: 1px;
+    }
+    .header_items {
+        flex-direction: column;
+        align-items: center;
+    }
     .main_container {
-        justify-content: flex-end;
+        justify-content: center;
         margin-right: 5%;
+        margin-left: 5%;
+    }
+    .links {
+        display: block;
     }
     main {
         min-height: 20vh;
+        width: 100%;
     }
     footer {
         margin-top: 10px;
         min-height: 20vh;
-        justify-content: flex-end;
-        margin-right: 5%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .footer {
+        width: 100%;
+        margin-left: 0%;
     }
     .left_wrap {
-        min-width: calc(33% - 0px);
+        /* min-width: calc(33% - 0px);
         max-width: calc(35% - 0px);
         font-size: 20px;
         line-break: auto;
         left: 0%;
-        min-height: 20vh;
+        min-height: 20vh; */
+        display: none;
     }
     .chmonya {
         display: none;
@@ -364,7 +399,7 @@ li > a {
         max-width: calc(22% - 0px);
         line-break: auto;
         left: 0%;
-        min-height: 20vh;
+        min-height: 50%;
     }
     }
 
