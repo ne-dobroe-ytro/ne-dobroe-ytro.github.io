@@ -28,7 +28,7 @@ p {
 }
 @media screen and (min-width: 100px) and (max-width: 1300px) {
     .otvet {
-        max-width: calc(90% - 100px);
+        max-width: calc(90% - 0px);
         font-size: 18px;
         float: left;
         translate: 20px;
