@@ -1,0 +1,234 @@
+.peoples {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #181d27;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #1c2029,#181d27);
+    padding: 15px;
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin-right: 0%;
+    min-height: 80vh;
+    background: linear-gradient(45deg, #2f3136, #1c2029);
+    width: calc(70% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    animation: plavno, plavno_2;
+    animation-duration: 1s;
+    animation-delay: 20ms;
+    flex-wrap: nowrap;
+}
+.main_content {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    max-width: 900px;
+    gap: 10px;
+    max-height: 500px;
+}
+.cat > a {
+    text-decoration: none;
+    color: #9b270d;
+}
+.men > a {
+    text-decoration: none;
+    color: #061b91;
+}
+.makrochel > a {
+    text-decoration: none;
+    color: #c77812;
+}
+.peoples > a > img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 710px)  {
+        .peoples {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border: 2px solid #1640a3;
+            border-radius: 10px;
+            background: linear-gradient(45deg, #1c2029,#181d27);
+            padding: 5px;
+            max-width: 180px;
+            max-height: 100px;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            margin-right: 0%;
+            min-height: 80vh;
+            background: linear-gradient(45deg, #2f3136, #1c2029);
+            width: calc(70% - 20px);
+            padding: 20px;
+            border-radius: 10px;
+            animation: plavno, plavno_2;
+            animation-duration: 1s;
+            animation-delay: 20ms;
+        }
+        .main_content {
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 400px;
+            gap: 5px;
+            max-height: 30%;
+        }
+}
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+    .peoples {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 2px solid #1640a3;
+        border-radius: 10px;
+        background: linear-gradient(45deg, #1c2029,#181d27);
+        padding: 5px;
+        max-width: 180px;
+        max-height: 100px;
+    }
+    main {
+        display: flex;
+        margin-right: 15%;
+        min-height: 80vh;
+        background: linear-gradient(45deg, #2f3136, #1c2029);
+        width: calc(70% - 20px);
+        padding: 20px;
+        border-radius: 10px;
+        animation: plavno, plavno_2;
+        animation-duration: 1s;
+        animation-delay: 20ms;
+    }
+    .main_content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+        gap: 10px;
+        max-height: 30%;
+    }
+}
+.buttons {
+    min-width: 100%;
+    padding: 10px; 
+    bottom: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+}
+.buttonsmob {
+    display: none;
+}
+.navmob {
+    display: none;
+}
+.nav_2mob {
+    display: none;
+}
+.previous {
+    text-decoration: none;
+    background-color: #181d27;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    animation: plavno, plavno_2;
+    animation-duration: 1s;
+}
+.next {
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #181d27;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    animation: plavno, plavno_2;
+    animation-duration: 1s;
+}
+.number {
+    font-size: 26px;
+    color: #ffffff;
+}
+.cat {
+    border-color: #9b270d;
+}
+.makrochel {
+    border-color: #c77812;
+}
+.men {
+    border-color: #061b91;
+}
+.cat > a > img {
+    overflow: hidden;
+    transition: all 0.2s linear;
+    border: 4px solid #9b270d;
+}
+.men > a > img {
+    transition: all 0.2s linear;
+    border: 4px solid #061b91;
+}
+.makrochel > a > img {
+    transition: all 0.2s linear;
+    border: 4px solid #c77812;
+}
+img:hover {
+    transform: scale(1.3);
+}
+@media screen and (min-width:100px) and (max-width: 720px) {
+    .buttons_mob {
+        min-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 80%;
+    }
+    .navmob {
+        display: flex;
+    }
+    .nav_2mob {
+        display: flex;
+    }
+    .buttons {
+        display: none;
+    }
+}
+@media screen and (min-width:720px) and (max-width: 1200px) {
+    main {
+        margin-right: 0%;
+        justify-content: center;
+    }
+    .main_container {
+        justify-content: center;
+        margin-right: 0%;
+        margin-left: 0;
+    }
+    .buttons {
+        min-width: 50%;
+        padding: 10px; 
+        bottom: 20%;
+        right: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+    }
+}

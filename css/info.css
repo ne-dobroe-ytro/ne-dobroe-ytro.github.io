@@ -1,0 +1,33 @@
+h2 {
+    margin-bottom: 20px;
+
+}
+.data {
+    opacity: 0.8;
+    position: relative;
+    bottom: 60px;
+    text-align: end;
+}
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.cc {
+    border: 2px solid #1640a3;
+    padding: 3.5px;
+    border-radius: 2px;
+}
+@media screen and (min-width:100px) and (max-width:720px) {
+    .cc { 
+    border: 1px solid #1640a3;
+    padding: 0.9px;
+    border-radius: 2px;
+    }
+}
+@media screen and (min-width:720px) and (max-width:1100px) {
+    .cc {
+        border: 1.5px solid #1640a3;
+        padding: 2.5px;
+        border-radius: 2px;
+    }
+}
