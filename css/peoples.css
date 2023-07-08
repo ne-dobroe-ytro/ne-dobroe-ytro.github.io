@@ -199,7 +199,7 @@ img:hover {
         align-items: flex-start;
         justify-content: space-between;
         position: absolute;
-        bottom: 80%;
+        bottom: 30%;
     }
     .navmob {
         display: flex;
