@@ -88,6 +88,13 @@ h2::first-letter {
     color: #1640a3;
     font-size: 20px;
 }
+.links > h2::first-letter {
+    color: #fff;
+    font-size: 20px;
+}
+.links > h2 {
+    font-size: 20px;
+}
 @media screen and (min-width: 100px) and (max-width: 720px)  {
         .profiles {
             font-size: 14px;
