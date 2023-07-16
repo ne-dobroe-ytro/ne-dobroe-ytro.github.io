@@ -69,6 +69,7 @@ header {
     opacity: 0.09;
 }
 .header_items {
+        font-weight: 300;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -213,6 +214,7 @@ main {
     }
 }
 #active {
+    font-weight: 600;
     background: linear-gradient(45deg, #2980B9 50%, #191c22 50%);
 }
 .menu > li {
@@ -220,7 +222,7 @@ main {
     transition: 1s;
     margin: 5px;
 }
-li:nth-child(1n - 2) {
+li:nth-child(2n - 2) {
     color: #5271b9;
 }
 .menu > h2 {
@@ -277,7 +279,7 @@ footer {
     position: fixed;
     min-height: 70vh;
     background: linear-gradient(135deg, #2f3136 90%, #1640a3 20%);
-    width: calc(22% - 100px);
+    width: calc(22vw - 7vw);
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 10px;
@@ -493,10 +495,10 @@ li > a {
     margin: 5px;
 }
 .links > h2:before {
-    right: 90%;
+    right: 85%;
     left: -1000%;
 }
 .links > h2:after {
-    left: 105%;
+    left: 100%;
     right: -1000%;
 }
